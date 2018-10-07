@@ -5,7 +5,7 @@
             <div class="edit-post" v-if="database.User.length !=0"><a ref="#">Edit Post</a></div>
             <div class="blog-date-created">{{ blogPost.dateCreated }}</div>
             <div class="blog-author">{{ blogPost.author }}</div>
-            <div class="blog-body">{{ blogPost.body }}</div>
+            <div class="blog-body">{{ blogPost.body.substring(0, 500)+". . ." }}</div>
         </div>
     </div>
 </template>
