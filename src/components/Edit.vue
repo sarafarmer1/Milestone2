@@ -23,20 +23,21 @@
         <div v-else>
             <h2 class="title">Please log in to make changes</h2>
         </div>
+    <router-link></router-link>
     </div>
 </template>
 
 
 <script>
-  import database from "@/database.js"
-  export default {
-    data () {
-      return {
-        database: database,
-        blogRouterId : this.$route.params.id.substr(1)
-      }
-    }
-}
+import database from "@/database.js";
+export default {
+  data() {
+    return {
+      database: database,
+      blogRouterId: this.$route.params.id.substr(1)
+    };
+  }
+};
 </script>
 
 <style scoped>

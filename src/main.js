@@ -5,19 +5,36 @@ import Home from './components/Home.vue'
 import Edit from './components/Edit.vue'
 import Create from './components/Create.vue'
 import View from './components/View.vue'
-import ContactRequests from './components/ContactRequests.vue'
+import ContactRequests from './components/ContactRequest.vue'
 import Tag from './components/Tag.vue'
 
 Vue.use(VueRouter);
 Vue.config.productionTip = false
 
-const routes = [
-  { path: '/', component: Home },
-  { path: '/view:id', component: View },
-  { path: '/edit:id', component: Edit },
-  { path: '/tag:tag', component: Tag },
-  { path: '/create', component: Create },
-  { path: '/contact-requests', component: ContactRequests }
+const routes = [{
+    path: '/',
+    component: Home
+  },
+  {
+    path: '/view:id',
+    component: View
+  },
+  {
+    path: '/edit:id',
+    component: Edit
+  },
+  {
+    path: '/tag:tag',
+    component: Tag
+  },
+  {
+    path: '/create',
+    component: Create
+  },
+  {
+    path: '/contact-requests',
+    component: ContactRequests
+  }
 ];
 
 const router = new VueRouter({

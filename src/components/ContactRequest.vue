@@ -14,7 +14,7 @@
       <div v-else>
         <h2 class="title">Please log in to make changes</h2>
       </div>
-    <router-link></router-link>
+      <router-link></router-link>
     </div>
 </template>
 
