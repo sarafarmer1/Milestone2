@@ -41,3 +41,6 @@ import ContactRequest from "@/contactRequest.js"
     }
   }
 </script>
+
+<style scoped>
+</style>
