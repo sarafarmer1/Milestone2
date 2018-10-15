@@ -17,27 +17,27 @@
 
 
 <script>
-  import database from "@/database.js"
-  export default {
-    data () {
-      return {
-        database: database
-      }
-    },
-    computed: {
-      sortedByDatePosts: function() {
-        return this.database.Posts.sort(function(a, b) {
-          if(a.dateCreated > b.dateCreated) {
-            return -1;
-          }
-          if (a.dateCreated < b.dateCreated) {
-            return 1;
-          }
-          return 0;
-        })
-      }
+import database from "@/database.js";
+export default {
+  data() {
+    return {
+      database: database
+    };
+  },
+  computed: {
+    sortedByDatePosts: function() {
+      return this.database.Posts.sort(function(a, b) {
+        if (a.dateCreated > b.dateCreated) {
+          return -1;
+        }
+        if (a.dateCreated < b.dateCreated) {
+          return 1;
+        }
+        return 0;
+      });
     }
   }
+};
 </script>
 
 <style scoped>
